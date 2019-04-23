@@ -1,0 +1,192 @@
+
+#orgChartContainer {
+	width: 100%;
+	background-color: #B5E4F4;
+	display: table;
+}
+#orgChart{
+	width: auto;
+	height: auto;
+	background-color: #B5E4F4;
+}
+
+div.orgChart {
+	margin : 5px;
+	padding : 35px 20px 20px 20px;
+}
+
+div.orgChart h2 {
+	margin : 0px;
+	font-size : 16px;
+	font-weight: normal;
+	min-height: 25px;
+}
+
+div.orgChart h2:hover {
+	background: #fcfaca;
+	cursor: text;
+}
+
+div.orgChart ul {
+	list-style : none;
+	margin : 4px;
+	padding : 0px;
+	font-size : 0.8em;
+	text-align : left;
+}
+
+div.orgChart ul.stack,
+div.orgChart ul.stack ul { text-align : center; }
+
+div.orgChart table { width : 100%; }
+
+div.orgChart tr.lines td.line {
+	width : 1px;
+	height : 20px;
+}
+
+div.orgChart tr.lines td.top { border-top : 1px dashed black; }
+
+div.orgChart tr.lines td.left { border-right : 1px dashed black; }
+
+div.orgChart tr.lines td.right { border-left : 0px dashed black; }
+
+div.orgChart tr.lines td.half { width : 50%; }
+
+div.orgChart td {
+	text-align : center;
+	vertical-align : top;
+	padding : 0px 2px;
+}
+
+div.orgChart div.node/*, div.orgChart div.node-guesses*/ {
+	cursor : default;
+	border : 1px solid #e7e7e7;
+	display : inline-block;
+	padding : 5px;
+	width : 700px;
+	/*height : 80px;*/
+	/*padding-bottom: 25px;*/
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fbfbfb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 100%); /* W3C */
+	line-height : 1.3em;
+	border-radius : 4px;
+	-moz-border-radius : 4px;
+	-webkit-border-radius : 4px;
+	position: relative;
+	box-shadow: 1px 1px 0px #ddd;
+}
+div.orgChart div.node-guesses {
+	/*display: inline-block;
+	padding: 2px;*/
+	font-size: 12px;
+}
+div.orgChart div.node h2{
+	display: inline;
+	line-height: 20px;
+}
+
+table.equalwidth {
+	table-layout: fixed;
+}
+table.equalwidth td {
+	width: 11%;
+}
+
+.org-add-button,
+.org-length-indicator,
+.org-toggle-guessbar-button,
+.org-force-recalc-button,
+.org-del-button,
+.org-copy-button,
+.org-save-button,
+.org-confirm-del-button {
+	/*position: absolute;*/
+	font-size: 12px;
+}
+
+
+
+.org-add-button {
+	background: url(../media/add.png) no-repeat 0 3px;
+	background-position: left 12px center; 
+}
+
+.org-add-button:hover,
+.org-force-recalc-button:hover,
+.org-toggle-guessbar-button:hover,
+.org-copy-button:hover,
+.org-save-button:hover,
+.org-del-button:hover {
+	background-color: #eef;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.org-del-button {
+	background: url(../media/delete.png) no-repeat;
+	background-position: right 12px center;
+}
+
+.org-length-indicator{
+	/*bottom: 3px;
+	left: 180px;*/
+}
+
+.org-toggle-guessbar-button {
+	/*background: url(../media/guess.jpg) no-repeat;*/
+	font-size: 17px;
+	font-weight:bolder;
+	color: #01A0E4;
+}
+.org-copy-button {
+	background: url(../media/copy.png) no-repeat;
+}
+.org-save-button {
+	background: url(../media/save.png) no-repeat;
+}
+
+.org-force-recalc-button {
+	background: url(../media/refresh.png) no-repeat;
+}
+
+.org-length-indicator,
+.org-toggle-guessbar-button,
+.org-force-recalc-button,
+.org-copy-button,
+.org-save-button {
+	background-position: center; 
+}
+
+.certainty0, .certainty1, .certainty2, .certainty3, .certainty4, .certainty5 {
+	background: white url(../media/guess.jpg) no-repeat 50% 4px;
+}
+.hitflag{
+	background: white url(../media/flag2.png) no-repeat 50% 5px;
+}
+
+
+.org-input {
+	width: 665px;
+	height: 80px;
+
+
+	/*position:absolute;
+	left:0;
+	top:0;
+	white-space:pre-wrap;
+	word-wrap:break-word;
+	/*resize:none;*/
+}
+.org-desc {
+	position: absolute;
+	top: -27px;
+	text-align: center;
+	font-size: small;
+}
+
+.org-confirm-del-button { display: none; }

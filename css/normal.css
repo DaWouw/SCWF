@@ -1,0 +1,461 @@
+/*********************************************
+ * let's use "base16-3024" as the default colour pallet.
+ * https://terminal.sexy/#CQMApaKiCQMA2y0gAaJS_e0CAaDkoWqUteT0paKiXFhV2y0gAaJS_e0CAaDkoWqUteT09_f3
+ *********************************************/
+
+body {
+   background-color:white;
+}
+
+span.selectedSolution {
+	padding: 2px 5px;
+	border: thick solid #17EB42;
+  border-radius: 5px 5px 5px 5px;
+  line-height: 180%;
+}
+
+body.r_chat {
+   color: #B5E4F4;
+}
+
+div.r_header {
+   background: #01A0E4;
+   color: white;
+}
+
+div.r_headbar {
+   background: #00003D;
+   color: #B5E4F4;
+   border-bottom: 1px solid #D0D0FF;
+}
+
+input.r_headsearch, body.r_chat form input {
+   background: #D0D0FF;
+   border: 1px solid white;
+}
+#hitValueBox {
+   clear: both;
+   display: none;
+   visibility: hidden;
+   text-align: center;
+   word-break: break-all;
+   border: 3px outset #17EB42;
+   margin-top: 5px;
+   padding: 3px;
+}
+
+.sp,.lo,.me,mark{
+  border-radius:5px;padding:1px;
+}
+
+.sp{background-color:#CD10FF;/*#CD10FF;*/}
+.lo{background-color:#DB2D20;/*#D6004A #E82B2D*/}
+.me{background-color:#FF8F47;/*#FF8F47*/}
+.fi,.fg{background-color:#EFBEEF;}
+.no{background-color:rgba(0,0,0,0);}
+mark{background-color:#FFFF96;/*FFFF96*/}
+a.an{display:inline;position:relative;top:-300px;visibility:hidden;font-size:1px;}
+/*var notepadColors = ['FDFCBC'/*Yellow*,'D6F1FA'/*Blue*,'D6CEFE'/*Purple*,'EFBEEF'/*Pink*,'B2E9AF'/*Green*];*/
+
+
+
+/*Enigma cipher CSS*/
+#rotor_display {
+   font-size: 28px;
+   font-family: Courier New, Courier, Fixed, monospace;
+   font-weight: bold;
+   text-align: center;
+   padding: 15px;
+}
+#rotor_display span {
+   border: 3px solid black;
+   color: white;
+   background-color: black;
+   padding: 10px;
+   margin: 0 10px;
+}
+fieldset {
+   border: 0px white solid;
+}
+fieldset ol {
+   margin: 0;
+   padding: 0;
+}
+fieldset li {
+   list-style: none;
+   padding: 5px;
+   margin: 0 0 5px 0;
+}
+#init_form input[type="text"] {
+   font-family: Courier New, Courier, Fixed, monospace;
+   font-weight: bold;
+}
+/*End Enigma CSS*/
+
+.dictionary th.bytes {
+  white-space: nowrap;
+}
+.dictionary td.bytes {
+  font-family: monospace;
+  white-space: nowrap;
+}
+.dictionary td.footnote {
+  font-size: smaller;
+}
+
+.code, span.outputbox, span.outputboxnoclear {
+  font-family: Courier New, Courier, Fixed, monospace;
+}
+
+div.r_backlink {
+   background: white;
+}
+
+div.r_backlink a:link {
+   color: #00003D;
+}
+
+div.r_backlink a:hover {
+   color: #8D0000;
+}
+
+div.r_backlink a:visited {
+   color: #210021;
+}
+
+div.r_backlink a:active {
+   color: orange;
+}
+a.extern {
+   background-position: center right;
+   background-repeat: no-repeat;
+   background-image: linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%3Cg%20transform%3D%22translate%28-826.429%20-698.791%29%22%3E%3Crect%20width%3D%225.982%22%20height%3D%225.982%22%20x%3D%22826.929%22%20y%3D%22702.309%22%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M831.194%20698.791h5.234v5.391l-1.571%201.545-1.31-1.31-2.725%202.725-2.689-2.689%202.808-2.808-1.311-1.311z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M835.424%20699.795l.022%204.885-1.817-1.817-2.881%202.881-1.228-1.228%202.881-2.881-1.851-1.851z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+   padding-right: 13px;
+}
+a.save {
+   background-position: center right;
+   background-repeat: no-repeat;
+   background-image: linear-gradient(transparent,transparent),url('../media/save.png');
+   padding-right: 14px;
+}
+
+div.r_footbar {
+   background: #00003D;
+   border-top: 1px solid #B5E4F4;
+}
+
+td.r_info {
+   color: #B5E4F4;
+}
+
+td.r_trivia {
+   color: #B5E4F4;
+}
+
+a.r_link:link, a.r_link:visited,
+td.r_info a:link, td.r_info a:visited, 
+td.r_trivia a:link, td_rtrivia a:visited,
+body.r_chat a:link, body.r_chat a:visited {
+   color: orange;
+}
+
+a.r_link:hover, a.r_link:active,
+td.r_info a:hover, td.r_info a:active,
+td.r_trivia a:hover, td.r_trivia a:active,
+body.r_chat a:hover, body.r_chat a:active {
+   color: yellow;
+}
+
+td.r_box {
+   background: #B5E4F4;
+}
+div.outputbox {
+   margin-top: 12px;
+   margin-bottom: 12px;
+}
+span.outputbox, span.outputboxnoclear {
+   background: #B5E4F4;
+   border:2px solid gray;
+   padding: 3px;
+   display: inline-block;
+   word-break: break-all;
+}
+.outputbox:empty, .outputboxnoclear:empty {
+   display:inline-block;
+}
+
+/*.hidden{
+  visibility: hidden;
+  display: none;
+}*/
+
+/*    http://www.bestcssbuttongenerator.com/#/7     */
+.autoGuessButton, .manualGuessButton, .ENABLE_AUTO_BRUTEFORCE, .ENABLE_AUTO_DECODE,
+.blueSelectDropdown {
+  -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  box-shadow:inset 0px -3px 7px 0px #29bbff;
+  background-color:#2dabf9;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #0b0e07;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:11px;
+  padding:6px 18px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
+  line-height: 1em;
+}
+.autoGuessButton:active, .manualGuessButton:active, .ENABLE_AUTO_BRUTEFORCE:active, .ENABLE_AUTO_DECODE:active {
+  position:relative;
+  top:1px;
+}
+
+.autoGuessButton {
+  text-shadow:0px 1px 0px #263666;
+  background-color:#0688fa;
+}
+.autoGuessButton:hover {
+  background-color:#0688fa;
+}
+
+.manualGuessButton {
+  -moz-box-shadow:inset 0px -3px 7px 0px #3181a3;
+  -webkit-box-shadow:inset 0px -3px 7px 0px #3181a3;
+  box-shadow:inset 0px -3px 7px 0px #3181a3;
+  background-color:#135873;
+  border:1px solid #0b0e07;
+  text-shadow:0px 1px 0px #263666;
+  background-color:#184366;
+}
+.manualGuessButton:hover {
+  background-color:#184366;
+}
+
+.blueSelectDropdown {
+  padding:3px 4px;
+}
+.manualSelectDropdown {
+  -moz-box-shadow:inset 0px -3px 7px 0px #3181a3;
+  -webkit-box-shadow:inset 0px -3px 7px 0px #3181a3;
+  box-shadow:inset 0px -3px 7px 0px #3181a3;
+  background-color:#135873;
+  border:1px solid #0b0e07;
+  text-shadow:0px 1px 0px #263666;
+  background-color:#184366;
+}
+
+
+
+/* ASCII HEATMAP TABLE */
+table.T_ASCII, table.T_ASCII td, table.T_ASCII th
+{
+  border:none;
+  padding:3px;
+}
+table.T_ASCII th 
+{
+  text-align:left;
+  border-bottom: 1px solid #AAA;
+}
+table.T_ASCII td.T_dec
+{
+  padding-left:15px;
+  
+  -moz-border-top-left-radius: 13px; 
+  -webkit-border-top-left-radius: 13px; 
+  border-top-left-radius: 13px;
+  -moz-border-bottom-left-radius: 13px; 
+  -webkit-border-bottom-left-radius: 13px; 
+  border-bottom-left-radius: 13px;
+}
+table.T_ASCII td.T_hex
+{
+  padding-right: 7px;
+}
+table.T_ASCII td.T_val
+{
+  font-weight: bold;
+  color:#777;
+  padding-right: 7px;
+
+  -moz-border-top-right-radius: 13px; 
+  -webkit-border-top-right-radius: 13px; 
+  border-top-right-radius: 13px;
+  -moz-border-bottom-right-radius: 13px; 
+  -webkit-border-bottom-right-radius: 13px; 
+  border-bottom-right-radius: 13px;
+}
+table.T_ASCII td.T_dec, table.T_ASCII td.T_hex
+{
+  color:#AAA;
+  text-align: right;
+}
+table.T_ASCII td.T_space
+{
+  width:100px;
+}
+
+table.T_ASCII td.T_dec.found, table.T_ASCII td.T_hex.found, table.T_ASCII td.T_val.found
+{
+  border-top: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+}
+table.T_ASCII td.T_dec.found, table.T_ASCII td.T_hex.found
+{
+  color:#333;
+}
+table.T_ASCII td.T_dec.found
+{
+  border-left: 1px solid #AAA;
+}
+table.T_ASCII td.T_val.found
+{
+  color: black;
+  font-weight: bolder;
+  border-right: 1px solid #AAA;
+}
+
+
+
+/*Basic Switch: https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 23px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 23px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.closeSettings {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.closeSettings:hover,
+.closeSettings:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #01A0E4;
+    color: white;
+}
+.modal-header h2 {
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #01A0E4;
+    color: white;
+    text-align: right;
+}
+
+#allSettingsCol2TBody table, #allGlobSettingsTBody table {
+  margin-left: 30px;
+}
+

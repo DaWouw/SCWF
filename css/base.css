@@ -1,0 +1,244 @@
+/*********************************************
+ * let's use "base16-3024" as the default colour pallet.
+ * https://terminal.sexy/#CQMApaKiCQMA2y0gAaJS_e0CAaDkoWqUteT0paKiXFhV2y0gAaJS_e0CAaDkoWqUteT09_f3
+ *********************************************/
+
+@font-face {
+    font-family: Roboto;
+    src: url('../media/Roboto-Regular.ttf');
+}
+
+caption, table, thread, tbody, tr, td, th {
+   font-size: inherit;
+   font-family: inherit;
+   font-weight: inherit;
+}
+
+th {
+   font-weight: bold;
+}
+
+body { 
+   background-color: #FFFFFF; 
+   color: #000000; 
+   margin: 0px;
+   overflow: auto;
+   font-family: Roboto;
+}
+
+div.r_header {
+   font-family: Roboto;
+   font-size: 2.5em;
+   font-style: italic;
+   font-weight: bold;
+   margin: 0;
+   padding: 3px 8px 3px 8px;
+}
+
+div.r_headbar {
+   font-weight: bold;
+   display: table;
+   width: 100%;
+   padding: 8px 0px 4px 0px;
+   border-bottom: 1px solid black;
+}
+
+div.r_headbarlinks {
+   display: table-cell;
+   float: left;
+   font-family: Roboto;
+   margin-left: 8px;
+}
+
+span.r_arr {
+   font-family: courier;
+   font-size: 0.75em;
+   font-weight: normal;
+}
+
+div.r_headbarsearch {
+   float: right;
+   display: table-cell;
+   margin-right: 8px;
+   font-size: 0.8em;
+}
+
+input.r_headsearch {
+   font-size: 0.8em;
+   border: 1px solid black;
+}
+
+div.r_backlink {
+   border: 3px #01A0E4 outset;
+   padding: 0px 4px 0px 8px;
+   margin: 0px;
+   position:fixed;
+   top: 39px;
+   right: 3px;
+   border-radius: 5px;
+}
+
+div.r_backlink a {
+   text-decoration: none;
+}
+
+div.r_main, table.r_main {
+   margin: 8px;
+   padding: 3px;
+   /*border: 1px solid black;*/
+   font-family: Roboto;
+   background: white;
+}
+
+div.r_footbar {
+   width: 100%;
+   clear: both;
+   border-top: 1px solid black;
+   padding: 8px 0px 4px 0px;
+}
+
+iframe.r_chat {
+   width: 100%;
+   height: 100%;
+}
+
+td.r_info {
+   font-size: 0.9em;
+   padding-left: 16px;
+   padding-right: 8px;
+}
+
+td.r_trivia {
+   padding-left: 16px;
+   padding-right: 8px;
+   font-size: 0.8em;
+}
+
+sup { 
+   font-size: 65%;
+   vertical-align: 0.8ex;
+}
+
+sub { 
+   font-size: 65%;
+   vertical-align: -0.5ex;
+}
+
+a { color: #A16A94; }
+
+a:hover, a:active { color: #01A252; }
+
+a.r_link, td.r_info a, td.r_trivia a, a.r_menu2 {
+   text-decoration: none;
+}
+
+body.r_chat {
+   margin: 0px;
+   padding: 0px;
+   background: transparent;
+}
+
+body.r_chat span {
+   font-size: 0.7em;
+}
+
+body.r_chat form {
+   display: inline;
+   margin: 0px;
+   padding: 0px;
+}
+
+body.r_chat form input {
+   border: 1px solid black;
+   font-size: 0.7em;
+}
+
+table.r_box {
+   border: 2px solid black;
+   padding: 0px;
+}
+.ni1 {
+   position: fixed;
+   bottom: -3px;
+   left: 50px;
+}
+.ni2 {
+   position: fixed;
+   top: 35px;
+   left: 0px;
+}
+.ni3 {
+   position: fixed;
+   bottom: 90px;
+   right: 0px;
+   z-index: 2;
+}
+td.r_box {
+   padding: 4px;
+   margin: 0px;
+}
+
+p {
+   margin-top: 4px;
+}
+
+h2{
+	color:#01A252;
+}
+
+h2.r_sect {
+   margin-top: 0px;
+}
+
+ul.r_menu {
+   padding: 0px;
+   margin: 0px;
+   float: left;
+   list-style-type: none;
+}
+
+ul.r_menu > li {
+   padding: 0px;
+   margin: 0px;
+}
+
+ul.r_menu2 {
+   list-style-type: none;
+   background-color: white;
+   margin: 0px;
+   position: absolute;
+   display: none;
+   border: 2px solid black;
+   color: black;
+   padding: 0.4em;
+}
+
+ul.r_menu2 li:hover {
+   background-color: #DFDFDF;
+}
+
+li:hover > ul.r_menu2 {
+   display: block;
+}
+
+ul.r_menu2 > li {
+   width: 100%;
+   margin: 0px;
+   display: block;
+}
+
+ul.r_menu2 > li > ul.r_menu2 {
+   left: 8em;
+   width: 100%;
+   top: auto;
+}
+
+ul.r_menu2 > li > hr {
+   margin: 10px 10% 6px 10%;
+   border: 2px solid black;
+   width: 80%;
+}
+
+div.adbox {
+   margin-bottom: 5px;
+}
